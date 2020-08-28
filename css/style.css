@@ -614,6 +614,12 @@ header {
     color: #ffffff;
 }
 
+hr {
+    border: 0.7px solid #ffffff;
+    width: 60vw;
+    margin: 10px auto;
+}
+
 footer {
     position: relative;
     width: 100vw;
@@ -701,6 +707,48 @@ footer>p {
 
 .fa-reddit-alien:hover {
     color: orangered;
+}
+
+.divCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 45%;
+    margin: 20px;
+    height: 130%;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    background: transparent;
+    -webkit-box-shadow: 3px -2px 13px 1px rgba(29, 29, 29, 0.75);
+    -moz-box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    -webkit-box-shadow: inset 3px -2px 13px 1px rgba(29, 29, 29, 0.75);
+    -moz-box-shadow: inset 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+}
+
+.card #first {
+    margin-top: 10px;
+}
+
+.btn_card {
+    border: 2px solid;
+    color: #ffffff;
+}
+
+.btn_card:hover {
+    background: #ffffff;
+    color: #000000;
 }
 
 @media screen and (max-width: 1100px) {
@@ -900,5 +948,19 @@ footer>p {
     }
     .social_media {
         flex-direction: row;
+    }
+    .divCard {
+        flex-direction: column;
+        width: inherit;
+    }
+    .card {
+        width: 90vw;
+        margin: 0;
+    }
+    .card #first {
+        font-size: 30px;
+    }
+    .goto {
+        right: 1%;
     }
 }
