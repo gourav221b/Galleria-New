@@ -317,6 +317,7 @@ header {
 
 .para {
     font-family: 'Lora', cursive;
+    text-transform: capitalize;
     text-align: justify;
 }
 
@@ -544,6 +545,7 @@ header {
     width: 25px;
     background-color: transparent;
     border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 
 
@@ -558,9 +560,9 @@ header {
 /* When the checkbox is checked, add a blue background */
 
 .container input:checked~.checkmark {
-    background-color: rgb(248, 184, 7);
+    background-color: rgb(4, 110, 248);
     border: transparent;
-    transition: 0.4s ease;
+    transition: 0.6s ease-in-out;
     color: #E94057;
 }
 
@@ -584,12 +586,12 @@ header {
 /* Style the checkmark/indicator */
 
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 10px;
+    top: 7px;
     width: 5px;
     height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 4px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -632,6 +634,7 @@ footer {
     margin: 0 auto;
     align-items: flex-start;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
 footer .left_footer,
@@ -664,6 +667,11 @@ footer>p {
 
 .yellow:hover {
     color: rgb(248, 184, 7) !important;
+    transition: 0.4s ease;
+}
+
+.red:hover {
+    color: rgb(238, 9, 85) !important;
     transition: 0.4s ease;
 }
 
