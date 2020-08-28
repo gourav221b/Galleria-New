@@ -311,7 +311,7 @@ header {
 
 .heading,
 .para,
-.button {
+.btn {
     margin: 20px;
 }
 
@@ -320,7 +320,7 @@ header {
     text-align: justify;
 }
 
-.button {
+.btn {
     width: 30%;
     text-align: center;
     border: 2px solid;
@@ -330,7 +330,7 @@ header {
     transition: all 0.4s ease;
 }
 
-.button:hover {
+.btn:hover {
     background: #ffffff;
     color: #000;
 }
@@ -842,7 +842,7 @@ footer>p {
         position: relative;
         top: 50px;
     }
-    .button {
+    .btn {
         width: 70%;
         border: 2px solid;
         color: #ffffff;
@@ -909,7 +909,7 @@ footer>p {
         width: 70vw;
         margin-bottom: 20px;
     }
-    .button {
+    .btn {
         width: 90%;
         margin: 20px auto;
     }
