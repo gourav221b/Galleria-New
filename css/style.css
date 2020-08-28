@@ -321,13 +321,14 @@ header {
 }
 
 .btn {
-    width: 30%;
+    width: 30vw;
     text-align: center;
     border: 2px solid;
     color: #ffffff;
     padding: 10px;
     cursor: pointer;
     transition: all 0.4s ease;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -741,16 +742,6 @@ footer>p {
     margin-top: 10px;
 }
 
-.btn_card {
-    border: 2px solid;
-    color: #ffffff;
-}
-
-.btn_card:hover {
-    background: #ffffff;
-    color: #000000;
-}
-
 @media screen and (max-width: 1100px) {
     #navbar {
         background: #000000;
@@ -843,7 +834,7 @@ footer>p {
         top: 50px;
     }
     .btn {
-        width: 70%;
+        width: 80vw;
         border: 2px solid;
         color: #ffffff;
         padding: 5px;
@@ -910,7 +901,7 @@ footer>p {
         margin-bottom: 20px;
     }
     .btn {
-        width: 90%;
+        width: 90vw;
         margin: 20px auto;
     }
 }
