@@ -247,7 +247,7 @@ nav .hamburger-menu .bars::after {
 }
 
 .menu_items li a::after {
-    transform: translate(-100%, 25px);
+    transform: translate(-100%, 35px);
 }
 
 .menu_items li a:hover:before,
@@ -890,6 +890,7 @@ footer>p {
     }
     #image_divs2 {
         flex-direction: column;
+        margin-top: 0 !important;
     }
     .row,
     #row2 {
