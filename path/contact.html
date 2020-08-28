@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="/images/faviconbg.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
     <title>Contact|Galleria De Artiste </title>
 </head>
@@ -49,19 +50,45 @@
             <div class="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime aliquam dolorum voluptatum qui placeat ullam a amet velit, natus perferendis officiis tempora optio sequi quos consequatur voluptatem. Provident, omnis.
             </div>
-            <div class="button">
-                <a role="button" class="btn">EXPLORE</a>
-            </div>
+
         </div>
         <div class="image">
 
-            <img src="/images/undraw_creative_team_r90h.svg" alt="banner_image">
+            <img src="/images/undraw_contact_us_15o2.svg" alt="banner_image">
         </div>
     </header>
     <section class="main">
         <section class="div_big div1">
             <div class="heading">
-                <p class="text_head">ABOUT US</p>
+                <p class="text_head">GET IN TOUCH WITH US</p>
+            </div>
+        </section>
+        <section class="formContainer">
+            <div class="Form">
+                <form class="gform " id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbyggPGuxfp4jL3BmPCJ-kZOe5018SWeN7tXrXUs/exec">
+
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                    <br>
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                    <br>
+                    <label for="Email"></label>
+                    <input type="email" id="Email" name="Email" placeholder="Your email address">
+                    <br>
+                    <label for="Message"></label>
+                    <br>
+                    <textarea id="Message" name="Message" placeholder="Do you wanna say hello? "></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                    <div style="display:none" class="thankyou_message">
+                        <h2 id="demo">
+                        </h2>
+                    </div>
+                </form>
+            </div>
+            <div class="formImage">
+                <img src="/images/undraw_personal_email_t7nw.svg" alt="">
             </div>
         </section>
 
@@ -104,7 +131,7 @@
     </footer>
 
 
-
+    <script src="/js/form-submission-handler.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

@@ -1,0 +1,89 @@
+.formContainer {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Form {
+    width: 80%;
+    padding: 20px;
+}
+
+.formImage {
+    width: 30%;
+}
+
+.formImage img {
+    width: 100%;
+    height: 100%;
+}
+
+#contactForm input[type=text],
+#contactForm input[type=email] {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    color: #ffffff;
+}
+
+#contactForm>textarea {
+    height: 200px;
+}
+
+#contactForm input[type=text],
+#contactForm input[type=email],
+#contactForm>textarea {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+#contactForm input[type=text]:focus,
+#contactForm input[type=email]:focus,
+#contactForm>textarea:focus,
+#contactForm input[type=text]:hover,
+#contactForm input[type=email]:hover,
+#contactForm>textarea:hover {
+    background: #ffffff57;
+}
+
+::placeholder {
+    color: #ffffff;
+    padding: 10px;
+}
+
+#contactForm>textarea {
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+}
+
+#contactForm input[type=submit] {
+    width: 60%;
+}
+
+#contactForm input[type=submit]:hover,
+#contactForm input[type=submit]:focus {
+    background: teal;
+    color: #ffffff;
+    box-shadow: unset;
+}
+
+@media screen and (max-width:800px) {
+    .formContainer {
+        flex-direction: column-reverse;
+    }
+    .Form {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .formImage {
+        width: 100%;
+        height: auto;
+    }
+    #contactForm input[type=submit] {
+        width: 100%;
+    }
+}
