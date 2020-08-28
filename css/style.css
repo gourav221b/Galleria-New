@@ -610,6 +610,10 @@ header {
     box-shadow: inset -1px -2px 15px 8px rgba(0, 0, 0, 0.75);
 }
 
+.gform #demo {
+    color: #ffffff;
+}
+
 footer {
     position: relative;
     width: 100vw;

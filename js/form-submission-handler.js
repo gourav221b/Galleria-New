@@ -82,7 +82,7 @@
             }
         };
         var i = 0;
-        var txt = 'Thank You for contacting us! We will get back to you soon!';
+        var txt = 'Thank You for contacting us! We will get back to you soon! 😊';
         var speed = 60;
 
         function typeWriter() {
