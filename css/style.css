@@ -685,7 +685,8 @@ footer>p {
 
 .fa-facebook,
 .fa-instagram,
-.fa-reddit-alien {
+.fa-reddit-alien,
+.fa-twitter {
     transition: all 0.5s ease;
 }
 
@@ -694,7 +695,8 @@ footer>p {
     color: #ffffff;
 }
 
-.fa-facebook:hover {
+.fa-facebook:hover,
+.fa-twitter:hover {
     color: #3b5998;
 }
 
@@ -740,6 +742,10 @@ footer>p {
 
 .card #first {
     margin-top: 10px;
+}
+
+.btn_card {
+    width: auto;
 }
 
 @media screen and (max-width: 1100px) {
@@ -903,6 +909,9 @@ footer>p {
     .btn {
         width: 90vw;
         margin: 20px auto;
+    }
+    .btn_card {
+        width: 90%;
     }
 }
 
