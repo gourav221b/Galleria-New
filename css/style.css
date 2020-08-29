@@ -261,10 +261,8 @@ nav .hamburger-menu .bars::after {
 }
 
 header {
-    /* background: url('https://images.pexels.com/photos/354939/pexels-photo-354939.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') #000000; */
-    /* background: url('https://images.pexels.com/photos/790479/pexels-photo-790479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') #ffffff; */
-    /* background: url('https://cdn.pixabay.com/photo/2012/08/27/14/19/evening-55067_1280.png') #000000; */
-    background: url('/images/banner.jpg') #000000;
+    background: #151515;
+    background: url('/images/banner.jpg') #151515;
     background-blend-mode: lighten;
     background-size: cover;
     background-repeat: no-repeat;
@@ -470,6 +468,7 @@ header {
     gap: 2px 2px;
     grid-template-areas: ". ." ". .";
     margin: 0 auto;
+    background-color: #151515;
 }
 
 .box2>img {
@@ -604,6 +603,7 @@ header {
     text-transform: uppercase;
     padding: 15px;
     transition: 0.5s ease;
+    width: 54%;
 }
 
 .gform input[type=submit]:hover {
@@ -937,7 +937,8 @@ footer>p {
         transform: scale(0.7);
     }
     .newsletter input[type=text],
-    .newsletter input[type=email] {
+    .newsletter input[type=email],
+    .newsletter input[type=submit] {
         width: 80vw;
     }
 }
