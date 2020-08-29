@@ -846,6 +846,7 @@ footer>p {
         font-size: 10px;
         position: relative;
         top: 50px;
+        text-align: center;
     }
     .btn {
         width: 110%;
