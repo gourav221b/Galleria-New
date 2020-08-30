@@ -36,10 +36,22 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    -webkit-box-shadow: 3px -2px 13px 1px rgba(29, 29, 29, 0.75);
+    -moz-box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
+    transition: 0.5s ease-in-out;
 }
 
 .art {
     width: 100%;
+}
+
+.heading {
+    text-transform: capitalize;
+}
+
+.text_head {
+    text-transform: uppercase;
 }
 
 
@@ -61,5 +73,8 @@
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+    .btn {
+        width: 100%;
     }
 }
