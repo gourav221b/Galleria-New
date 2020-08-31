@@ -5,34 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Galleria-De-Artiste">
+    <meta name="google-site-verification" content="BSN7YHB9WxmjiaklAD_zTeqY-MScOzC0HUcrJbdRfEc" />
     <meta property="og:description" content="A platform for all types of Creativity">
-    <meta property="og:image" itemprop="image" content="https://gallerianew.netlify.app/images/kakashi.jpeg">
+    <meta property="og:image" itemprop="image" content="/images/kakashi.jpeg">
     <meta property="og:url" content="https://gallerianew.netlify.app/">
     <link rel="shortcut icon" href="/images/faviconbg.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
-    <title>Catalog|Galleria De Artiste </title>
+    <title>Aheli's Clicks|Galleria De Artiste </title>
     <style>
-        @media screen and (max-width:480px) {
-            .card>img {
-                height: auto;
-                width: 60%;
-            }
-            .card {
-                height: auto;
-                margin-bottom: 30px;
-            }
-        }
-        
-        @media screen and (max-width:1120px) {
-            .cardContent #first {
-                font-size: 20px;
-                font-weight: 400;
-            }
-            .cardContent .btn_card {
-                font-size: 90%;
-            }
+        .column {
+            -ms-flex: 25%;
+            flex: 25%;
+            max-width: 25%;
         }
     </style>
 </head>
@@ -50,8 +37,8 @@
         <div class="menu">
             <ul class="menu_items">
                 <li><a class="nav_li  " href="/index.html">HOME</a></li>
-                <li><a class="nav_li active" href="/path/catalog.html">CATALOG</a></li>
-                <li><a class="nav_li" href="/path/about.html">ABOUT</a></li>
+                <li><a class="nav_li active " href="/path/catalog.html">CATALOG</a></li>
+                <li><a class="nav_li " href="/path/about.html">ABOUT</a></li>
                 <li><a class="nav_li" href="/path/contact.html">CONTACT</a></li>
                 <li class="social">
                     <a href="https://www.facebook.com/GalleriadeArtiste"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -65,57 +52,51 @@
     <header>
         <div class="text">
             <div class="heading">
-                FEATURED ITEMS
+                aheli's Gallery
             </div>
             <div class="para">
-                For us, an Artist is not limited to someone who draws or paints, It's more than that. For us, every photographer, every writer, Every Musician is an artist.
+                Find more of him on his social handles
+                <div class="button">
+                    <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="#"><i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="#"><i class="fa fa-reddit-alien"></i>
+                    </a>
+                </div>
             </div>
 
         </div>
         <div class="image">
-            <img src="/images/undraw_Note_list_re_r4u9.svg" alt="banner_image">
+
+            <img src="/images/undraw_modern_professional_yt9h.svg" alt="banner_image">
         </div>
     </header>
     <section class="main">
         <section class="div_big div1">
             <div class="heading">
-                <p class="text_head">FEATURED ITEMS</p>
+                <p class="text_head">aheli</p>
             </div>
+            <!-- Photo Grid -->
+            <div class="rowCard">
+                <div class="column">
+                    <img class="art lazy" data-src="/images/aheli/photograph/Aheli1.jpeg">
+                </div>
+                <div class="column">
+                    <img class="art lazy" data-src="/images/aheli/photograph/Aheli2.jpeg">
+
+                </div>
+                <div class="column">
+                    <img class="art lazy" data-src="/images/aheli/photograph/Aheli3.jpeg">
+
+                </div>
+                <div class="column">
+                    <img class="art lazy" data-src="/images/aheli/photograph/Aheli4.jpeg">
+
+                </div>
+                <br>
+                <a href="/path/catalog/photography.html" class="btn"> Return to Photographer page</a>
         </section>
-        <section class=" div_big divCard">
-            <!-- art -->
-            <div class="card">
-                <img class="lazy" data-src="/images/paint.jpg" alt="">
-                <div class="cardContent">
-                    <p id="first">Art Gallery</p>
-                    <a role="link" href="/path/catalog/art.html" class="btn btn_card ">EXPLORE</a>
-                </div>
-            </div>
-            <!-- photography -->
-            <div class="card">
-                <img class="lazy" data-src="/images/camera.jpg" alt="">
-                <div class="cardContent">
-                    <p id="first">Photo Gallery</p>
-                    <a role="link" class="btn  btn_card" href="/path/catalog/photography.html">EXPLORE</a>
-                </div>
-            </div>
-            <!-- writing -->
-            <div class="card">
-                <img class="lazy" data-src="https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_1280.jpg" alt="">
-                <div class="cardContent">
-                    <p id="first">Literature Section</p>
-                    <a role="link" class="btn btn_card">EXPLORE</a>
-                </div>
-            </div>
-            <!-- music -->
-            <div class="card">
-                <img class="lazy" data-src="/images/music.jpg" alt="">
-                <div class="cardContent">
-                    <p id="first">Music Gallery</p>
-                    <a role="link" class="btn  btn_card">EXPLORE</a>
-                </div>
-            </div>
-        </section>
+
     </section>
     <hr>
     <section class="footerContainer"></section>
