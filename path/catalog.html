@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
     <title>Catalog|Galleria De Artiste </title>
+    <style>
+        @media screen and (max-width:480px) {
+            .card>img {
+                height: auto;
+                width: 60%;
+            }
+            .card {
+                height: auto;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -51,7 +63,6 @@
 
         </div>
         <div class="image">
-
             <img src="/images/undraw_Note_list_re_r4u9.svg" alt="banner_image">
         </div>
     </header>
@@ -64,7 +75,7 @@
         <section class=" div_big divCard">
             <!-- art -->
             <div class="card">
-                <img src="/images/gourav/art/kakashi.jpeg" alt="">
+                <img class="lazy" data-src="/images/paint.jpg" alt="">
                 <div class="cardContent">
                     <p id="first">Art Gallery</p>
                     <a role="link" href="/path/catalog/art.html" class="btn btn_card ">EXPLORE</a>
@@ -72,7 +83,7 @@
             </div>
             <!-- photography -->
             <div class="card">
-                <img src="/images/aayush/photograph/kumarphoto12.jpg" alt="">
+                <img class="lazy" data-src="/images/camera.jpg" alt="">
                 <div class="cardContent">
                     <p id="first">Photo Gallery</p>
                     <a role="link" class="btn  btn_card">EXPLORE</a>
@@ -80,15 +91,15 @@
             </div>
             <!-- writing -->
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_1280.jpg" alt="">
+                <img class="lazy" data-src="https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_1280.jpg" alt="">
                 <div class="cardContent">
-                    <p id="first">Writing Section</p>
+                    <p id="first">Literature Section</p>
                     <a role="link" class="btn btn_card">EXPLORE</a>
                 </div>
             </div>
             <!-- music -->
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/01/20/13/13/ipad-605439_1280.jpg" alt="">
+                <img class="lazy" data-src="https://cdn.pixabay.com/photo/2015/01/20/13/13/ipad-605439_1280.jpg" alt="">
                 <div class="cardContent">
                     <p id="first">Music Gallery</p>
                     <a role="link" class="btn  btn_card">EXPLORE</a>

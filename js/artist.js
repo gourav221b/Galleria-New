@@ -122,7 +122,7 @@ function myFunction(arr) {
     var out = "";
     var i;
     for (i = 0; i < arr.length; i++) {
-        out += '<div class="card"><img src="' + arr[i].thumbnail + ' "alt="' + arr[i].Name + '"><div class="cardContent"><p id="first">' + arr[i].Name + '</p><p>' + arr[i].Number + " " + arr[i].Type + '</p><a role="link" class="btn btn_card " href="/path/catalog/art/' + arr[i].Name + '.html">SEE MORE</a></div></div>'
+        out += '<div class="card"><img class="lazy" data-src="' + arr[i].thumbnail + ' "alt="' + arr[i].Name + '"><div class="cardContent"><p id="first">' + arr[i].Name + '</p><p>' + arr[i].Number + " " + arr[i].Type + '</p><a role="link" class="btn btn_card " href="/path/catalog/art/' + arr[i].Name + '.html">SEE MORE</a></div></div>'
     }
     document.getElementById("divCard").innerHTML = out;
 }

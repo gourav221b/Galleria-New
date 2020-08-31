@@ -98,7 +98,7 @@
         </section>
         <section class="div_big search">
             <form class="newsletter">
-                <input type="text" placeholder="search here"></section>
+                <input type="text" onkeyup="myFunction()" id="myInput" placeholder="search here"></section>
         </form>
         <section class=" div_big divCard" id="divCard">
         </section>
@@ -110,6 +110,27 @@
     <script src="/js/artist.js"></script>
     <script src="/js/main.js"></script>
 
+    <script>
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.querySelector(".divCard");
+            li = ul.document.querySelectorAll(".card");
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("p")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
