@@ -29,7 +29,7 @@
         
         .card #first {
             font-family: 'Roboto', sans-serif;
-            font-size: 30px;
+            font-size: 40px;
         }
         
         .card img {
@@ -40,12 +40,19 @@
         .btn_card {
             width: auto;
         }
+        
+        @media screen and(max-width:480px) {
+            .card #first {
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="goto" onclick="location.replace('#top')">
-        <i class="fa fa-angle-up"></i> </div>
+        <i class="fa fa-angle-up"></i>
+    </div>
     <nav id="navbar">
         <div class="hamburger-menu" id="ham">
             <span class="bars"></span>
@@ -97,42 +104,7 @@
         </section>
     </section>
     <hr>
-    <footer>
-        <section class="left_footer">
-            <p id="first">GALLERIA-DE-ARTISTE</p>
-            <p>Galleria de artiste is an open platform, multi talent platform featuring Art, Photography, Creative Writings and Music. It is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators
-                over the unavailability of exclusive platforms for their work.</p>
-        </section>
-        <section class="middle_footer">
-            <p id="first">Quick Links</p>
-            <p>
-                <ul class="middle_ul">
-                    <li><a href="/index.html" class="yellow">Home</a></li>
-                    <li><a class="yellow" href="/path/catalog.html">Catalog</a>
-                        <ol class="middle_ul">
-                            <li><a class="red" href="/path/catalog/art.html">Art</a></li>
-                            <li><a class="red">Photography</a></li>
-                            <li><a class="red">Writings</a></li>
-                            <li><a class="red">Music</a></li>
-                        </ol>
-                    </li>
-                    <li><a href="/path/about.html" class="yellow">About</a></li>
-                    <li><a href="/path/contact.html" class="yellow">Contact</a></li>
-                </ul>
-            </p>
-        </section>
-        <section class="right_footer">
-            <p id="first">
-                Follow Us on
-            </p>
-            <p class="social_media">
-                <div class="social_icon facebook"><a target="_blank" href="https://www.facebook.com/GalleriadeArtiste"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-                <div class="social_icon instagram"><a target="_blank" href="https://www.instagram.com/galleria_de_artiste/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-                <div class="social_icon reddit"><a target="_blank" href="https://www.reddit.com/r/Galleria_de_artiste/"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></div>
-                <div class="social_icon twitter"><a><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-            </p>
-        </section>
-    </footer>
+    <section class="footerContainer"></section>
 
 
     <script src="/js/artist.js"></script>

@@ -46,7 +46,7 @@ html {
 .goto {
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 30px;
     font-size: 30px;
     display: none;
     width: 70px;
@@ -199,7 +199,7 @@ nav .hamburger-menu .bars::after {
 .brand span {
     font-size: 40px;
     color: rgb(238, 9, 85);
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .menu_items {
@@ -414,6 +414,23 @@ header {
     width: 20%;
     height: auto;
     margin: 10px auto;
+    transition: 0.6s ease-in-out;
+}
+
+#paint:hover {
+    transform: translateY(-30%);
+}
+
+#photo:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+#headphone:hover {
+    transform: scale(1.2);
+}
+
+#typewriter:hover {
+    transform: translateX(30%);
 }
 
 .image_divs>.vertical {
