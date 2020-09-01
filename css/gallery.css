@@ -39,7 +39,12 @@
     -webkit-box-shadow: 3px -2px 13px 1px rgba(29, 29, 29, 0.75);
     -moz-box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 3px -2px 13px 1px rgba(0, 0, 0, 0.75);
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.column img:hover {
+    opacity: 1;
 }
 
 .art {
@@ -48,6 +53,8 @@
 
 .heading {
     text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
 }
 
 .text_head {
@@ -55,7 +62,21 @@
 }
 
 .btn {
-    margin-top: 20px;
+    margin: 20px;
+}
+
+.tags>span {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.tags>span::before,
+.tags>span:nth-last-child(1)::after {
+    content: "•";
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 40px;
+    transform: translateY(10%);
 }
 
 

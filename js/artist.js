@@ -1,7 +1,7 @@
 var items = [{
 
         "Name": "aayush",
-        "Number": "6",
+        "Number": "7",
         "Type": "Sketches & Digital Art",
         "thumbnail": "/images/aayush/art/kumar7.jpeg"
     },
@@ -40,7 +40,7 @@ var items = [{
     {
 
         "Name": "gourav",
-        "Number": "22",
+        "Number": "24",
         "Type": "Sketches",
         "thumbnail": "/images/gourav/art/kakashi.jpeg"
     },

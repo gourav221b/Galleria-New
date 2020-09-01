@@ -3,7 +3,7 @@ var items = [{
         "Name": "aayush",
         "Number": "19",
         "Type": "Picures",
-        "thumbnail": "/images/aayush/photograph/kumarphoto4.jpeg"
+        "thumbnail": "/images/aayush/photograph/kumarphoto1.jpeg"
     }, {
 
         "Name": "aditya",
