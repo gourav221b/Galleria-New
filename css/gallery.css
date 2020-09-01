@@ -54,6 +54,10 @@
     text-transform: uppercase;
 }
 
+.btn {
+    margin-top: 20px;
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 

@@ -665,6 +665,10 @@ footer .left_footer,
     height: auto;
 }
 
+.middle_footer {
+    margin-left: -5px;
+}
+
 footer>p {
     font-size: 90%;
 }
@@ -773,6 +777,16 @@ footer>p {
 
 .btn_card {
     width: auto;
+}
+
+#shareit {
+    margin-left: 4%;
+}
+
+.shareText {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 1100px) {
