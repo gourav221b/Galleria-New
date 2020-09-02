@@ -360,6 +360,7 @@ header {
 }
 
 .btn {
+    text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -456,8 +457,9 @@ header {
     flex-direction: column;
 }
 
-#div4 .row {
+.div4 .row {
     display: flex;
+    flex-direction: row;
     width: inherit;
     align-items: center;
     justify-content: center;
@@ -911,6 +913,7 @@ footer>p {
         display: none !important;
     }
     .brand>span>a {
+        text-decoration: none;
         font-size: 120%;
         margin-top: 50% !important;
     }
@@ -956,8 +959,9 @@ footer>p {
         margin-bottom: 20px;
     }
     .btn {
+        text-decoration: none;
         width: 90vw;
-        margin: 20px auto;
+        margin: 20px auto !important;
     }
     .btn_card {
         width: 90%;
