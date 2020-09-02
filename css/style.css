@@ -789,6 +789,10 @@ footer>p {
     font-size: 1.2em;
 }
 
+#myInput {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 1100px) {
     #navbar {
         background: #000000;
@@ -905,8 +909,9 @@ footer>p {
     .heading::after {
         display: none !important;
     }
-    .brand span {
+    .brand>span {
         font-size: 120%;
+        margin-top: 50% !important;
     }
     .div_big {
         width: 80vw;

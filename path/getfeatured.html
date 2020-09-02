@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Galleria-De-Artiste">
+    <meta name="google-site-verification" content="BSN7YHB9WxmjiaklAD_zTeqY-MScOzC0HUcrJbdRfEc" />
+    <meta property="og:description" content="A platform for all types of Creativity">
+    <meta property="og:image" itemprop="image" content="/images/kakashi.jpeg">
+    <meta property="og:url" content="https://gallerianew.netlify.app/">
+    <link rel="shortcut icon" href="/images/faviconbg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/feature.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
+    <title>Get Featured TOday|Galleria De Artiste </title>
+</head>
+
+<body>
+    <div class="goto" onclick="location.replace('#top')">
+        <i class="fa fa-angle-up"></i> </div>
+    <nav id="navbar">
+    </nav>
+    <header>
+        <div class="text">
+            <div class="heading">
+                SEND US YOUR WORK
+            </div>
+            <div class="para">
+                Galleria-De-Artiste is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators over the unavailability of exclusive platforms for their work.
+            </div>
+
+        </div>
+        <div class="image">
+
+            <img src="/images/undraw_add_file_4gfw.svg" alt="banner_image">
+        </div>
+    </header>
+    <section class="main">
+        <section class="div_big div1">
+            <div class="heading">
+                <p class="text_head">GET FEATURED TODAY</p>
+            </div>
+        </section>
+        <section class="div_big featureForm">
+            <div class="icon_wrapper">
+                <img src="/images/mail.svg" alt="">
+            </div>
+            <form class="gform" action="https://script.google.com/macros/s/AKfycbzTY8QuGjCiZyHeMutbaCpuZ8tRplLxnjN97SDltM33l7fmeFLa/exec" method="POST">
+                <div class="name">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My name is" name="name" id="name_input" required>
+                </div>
+                <div class="email">
+                    <label for="email"></label>
+                    <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+                </div>
+                <div class="telephone">
+                    <label for="name"></label>
+                    <input type="text" placeholder="My number is (Optional)" name="telephone" id="telephone_input">
+                </div>
+                <div class="subject">
+                    <label for="subject"></label>
+                    <select placeholder="Subject line" name="subject" id="subject_input" required>
+                  <option disabled hidden selected>Chosen Field of Interest</option>
+                  <option>I'd like to Submit a Story</option>
+                  <option>I'd like to Submit a Poem</option>
+                  <option>I'd like to Submit an Article</option>
+                  <option>I'd like to Submit a Quote</option>
+                  <option>I'd like to Submit an Abstract</option>
+                  <option>I'd like to Submit an Music Piece</option>
+                </select>
+                </div>
+                <div class="message">
+                    <label for="message"></label>
+                    <textarea name="message" placeholder=" Optional Message" id="message_input" cols="30" rows="5"></textarea>
+                </div>
+                <div class="link">
+                    <label for="name"></label>
+                    <input type="link" placeholder="Here is a Google Drive Link of my Work" name="link" id="telephone_input" required>
+                </div>
+                <div class="submit">
+                    <button value="Send Message" id="form_button" onclick="alert('Your request is being processed, please stay on the page till you see another popup-box or a message. Thank You!')">Send Message</button>
+
+                </div>
+                <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2 id="demo" style="color: rgb(0, 0, 0);"></h2>
+                </div>
+
+            </form>
+
+        </section>
+
+    </section>
+    <hr>
+    <section class="footerContainer"></section>
+
+
+    <script src="/js/main.js"></script>
+    <script>
+        const home = document.querySelector("#featured");
+        home.classList.add('active');
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+</body>
+
+</html>
