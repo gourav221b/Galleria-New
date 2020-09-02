@@ -198,7 +198,7 @@ nav .hamburger-menu .bars::after {
 
 .brand span>a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 40px;
     color: rgb(238, 9, 85);
     font-family: 'Montserrat', sans-serif;
 }
@@ -910,7 +910,7 @@ footer>p {
     .heading::after {
         display: none !important;
     }
-    .brand>span {
+    .brand>span>a {
         font-size: 120%;
         margin-top: 50% !important;
     }
