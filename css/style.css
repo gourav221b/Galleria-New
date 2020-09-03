@@ -796,6 +796,30 @@ footer>p {
     color: #ffffff;
 }
 
+.box3 {
+    width: 30vw;
+}
+
+.box3 img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    text-transform: uppercase;
+}
+
+.carousel-caption>h3 {
+    text-shadow: 3px 2px 9px rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.carousel-caption>p {
+    color: #000000;
+    background: #ffffff;
+    mix-blend-mode: screen;
+}
+
 @media screen and (max-width: 1100px) {
     #navbar {
         background: #000000;
@@ -901,6 +925,20 @@ footer>p {
     footer {
         left: 0;
     }
+    .myCarousel {
+        width: 90vw;
+    }
+    .carousel-caption {
+        font-size: 14px;
+        position: absolute;
+        bottom: -20px;
+    }
+    .carousel-caption>h3 {
+        font-size: 18px;
+    }
+    .carousel-indicators {
+        bottom: -30px;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -945,16 +983,19 @@ footer>p {
     }
     .row,
     #row2 {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column !important;
     }
     .box1,
-    .box2 {
+    .box2,
+    .box3 {
         margin: 0 auto;
     }
     .box1 {
         width: 90vw;
     }
-    .box2 {
+    .box2,
+    .box3 {
         width: 70vw;
         margin-bottom: 20px;
     }
@@ -1016,5 +1057,8 @@ footer>p {
     }
     .goto {
         right: 1%;
+    }
+    .longText {
+        flex-direction: column;
     }
 }
