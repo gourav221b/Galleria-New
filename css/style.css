@@ -8,7 +8,7 @@
     }
     
      ::selection {
-        background: #e4326d;
+        background: #dd4785;
         color: #ffffff;
     }
     
@@ -421,11 +421,31 @@
     }
     
     #paint:hover {
-        transform: translateY(-30%);
+        animation: upDown 0.6s infinite;
+    }
+    
+    @keyframes upDown {
+        50% {
+            transform: translateY(-20%);
+            background: #fff;
+        }
+        100% {
+            transform: translateY(0%);
+            background: transparent;
+        }
     }
     
     #photo:hover {
-        transform: rotate(360deg) scale(1.1);
+        animation: circle 3s infinite;
+    }
+    
+    @keyframes circle {
+        50% {
+            transform: rotate(360deg) scale(1.1);
+        }
+        100% {
+            transform: rotate(-360deg) scale(1);
+        }
     }
     
     #headphone:hover {
