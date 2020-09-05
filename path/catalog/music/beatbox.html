@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/player.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="shortcut icon" href="/images/faviconbg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css" />
+    <title>Beatboxing| Music Gallery | Galleria-de-Artiste</title>
+</head>
+
+<body>
+    <div class="goto" onclick="location.replace('#top')">
+        <i class="fa fa-angle-up"></i></div>
+    <nav id="navbar">
+    </nav>
+    <header>
+        <div class="text">
+            <div class="heading">
+                Beatboxing GALLERY
+            </div>
+            <div class="para">
+                Galleria de artiste is an open platform, multi talent platform featuring Art, Photography, Creative Writings and Music. It is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators over the unavailability
+                of exclusive platforms for their work.
+            </div>
+        </div>
+        <div class="image">
+            <img src="/images/undraw_music_r1se.svg" alt="banner_image">
+        </div>
+    </header>
+    <section class="main" id="main">
+        <section class="div_big div1">
+            <div class="heading">
+                <p class="text_head">Beatboxing Gallery</p>
+            </div>
+        </section>
+        <div class="container" oncontextmenu="return false;">
+            <!-- SONG SECTIONS -->
+            <div class="row" id="songs">
+
+                <div class="col-md-6">
+                    <video class="frame album-poster" controls poster="/images/aritrosaha.jpeg" oncontextmenu="return false;">
+                        <source src="/source/aritrosahabeatbox.mp4" type="video/mp4">
+                      
+                        Your browser does not support the video tag.
+                      </video>
+                    <h4></h4>
+                    <p>Aritro Saha</p>
+                </div>
+            </div>
+        </div>
+        <p id="first">See more</p>
+        <p class="tags"><a href="/path/catalog/music/musicplayer.html">Complete Gallery</a>
+            <a href="/path/catalog/music/songs.html">Songs</a><a href="/path/catalog/music/instrumental.html">instrumental</a><a href="/path/catalog/music/hiphop.html">Hip-Hop</a> <a href="/path/catalog/music/edm.html">EDM</a>
+            <a href="/path/catalog/music/beatbox.html" style="color: rgb(209, 53, 105);">Beatboxing</a>
+        </p>
+    </section>
+    <section class="footerContainer"></section>
+    <div id="aplayer"></div>
+    <script src="/js/main.js"></script>
+    <script src="/js/active.js"></script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!-- APlayer Jquery link -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+    <script>
+        // NOW I CLICK album-poster TO GET CURRENT SONG ID
+        $(".album-poster").on('click', function(e) {
+            var dataSwitchId = $(this).attr('data-switch');
+            //console.log(dataSwitchId);
+
+            // and now i use aplayer switch function see
+            ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
+
+            // aplayer play function
+            // when i click any song to play
+            ap.play();
+
+            // click to slideUp player see
+            $("#aplayer").addClass('showPlayer');
+        });
+
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            listFolded: true,
+            audio: [{
+
+                name: 'Thats what I like X Astronomia (Dead Jump version by DJ Yudi)',
+                artist: 'DJ Yudi',
+                url: '/source/yudiAstronomia.mpeg',
+                cover: '/source/djyudi.jpg',
+            }]
+        });
+    </script> -->
+</body>
+
+</html>
