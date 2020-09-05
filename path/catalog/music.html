@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
 
     <title>About Us|Galleria De Artiste </title>
@@ -26,6 +27,10 @@
         
         hr {
             margin: 40px auto;
+        }
+        
+        .row {
+            margin-bottom: 30px;
         }
     </style>
 
@@ -56,22 +61,79 @@
                 <p class="text_head">THE MUSIC GALLERY</p>
             </div>
         </section>
-        <section class="div_big ">
+        <section class="div_big div4">
 
-            <div class="row">
+            <div class="row ">
                 <div class="box1">
                     <blockquote>
                         <p id="first">
-                            Cover Songs
+                            Browse By Listings
                         </p>
                     </blockquote>
-                    <div class="button">
-                        <a role="button" class="btn">SEE MORE</a>
-                    </div>
+
                 </div>
-                <div class="box2"></div>
             </div>
 
+            <!-- 2 -->
+            <div class="row" id="row2">
+                <div class="box1">
+
+                    <p id="first">
+                        <img src="/images/microphone.svg" alt="microphone"> SONGS
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque libero aliquam eligendi, temporibus quos, illo sapiente et mollitia beatae inventore alias sunt qui magni incidunt similique quam nobis dicta!</p>
+                    <a href="/path/catalog/music/songs.html" class="btn" id="desktop">Explore</a>
+                </div>
+                <div class="box2">
+                    <img src="/source/whathurts.png" alt="">
+                    <img src="/source/poisonandwine.png" alt="">
+                    <img src="/source/bealright.png" alt="">
+                    <img src="/source/takeonme.png" alt="">
+                </div>
+                <a href="/path/catalog/music/songs.html" class="btn" id="mobile">Explore</a>
+            </div>
+            <!-- 3 -->
+            <div class="row">
+                <div class="box1">
+                    <p id="first">
+                        <img src="/images/edm.svg" alt="instrument"> EDM
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque libero aliquam eligendi, temporibus quos, illo sapiente et mollitia beatae inventore alias sunt qui magni incidunt similique quam nobis dicta!</p>
+                    <a href="/path/catalog/music/edm.html" class="btn" id="desktop">Explore</a>
+                </div>
+                <div class="box3">
+                    <img src="/source/djyudi.jpg" alt="">
+                </div>
+                <a href="/path/catalog/music/edm.html" class="btn" id="mobile">Explore</a>
+            </div>
+            <!-- 4 -->
+            <div class="row" id="row2">
+                <div class="box1">
+                    <p id="first">
+                        <img src="/images/rapper.svg" alt="microphone"> HIP-HOP
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque libero aliquam eligendi, temporibus quos, illo sapiente et mollitia beatae inventore alias sunt qui magni incidunt similique quam nobis dicta!</p>
+                    <a href="/path/catalog/music/hiphop.html" class="btn" id="desktop">Explore</a>
+                </div>
+                <div class="box3">
+                    <img src="/source/cashflow.png" alt="">
+                </div>
+                <a href="/path/catalog/music/hiphop.html" class="btn" id="mobile">Explore</a>
+            </div>
+            <!-- 5 -->
+            <div class="row">
+                <div class="box1">
+                    <p id="first">
+                        <img src="/images/mic.svg" alt="instrument"> Beatboxing
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque libero aliquam eligendi, temporibus quos, illo sapiente et mollitia beatae inventore alias sunt qui magni incidunt similique quam nobis dicta!</p>
+                    <a href="/path/catalog/music/beatbox.html" class="btn" id="desktop">Explore</a>
+                </div>
+                <div class="box3">
+                    <img src="/images/beatbox.jpg" alt="">
+                </div>
+                <a href="/path/catalog/music/beatbox.html" class="btn" id="mobile">Explore</a>
+            </div>
         </section>
 
     </section>
@@ -80,10 +142,7 @@
 
 
     <script src="/js/main.js"></script>
-    <script>
-        const home = document.querySelector("#about");
-        home.classList.add('active');
-    </script>
+    <script src="/js/active.js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
 
 </body>

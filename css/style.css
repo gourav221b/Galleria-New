@@ -112,7 +112,7 @@
     }
     
     nav .hamburger-menu:hover {
-        background: rgba(31, 30, 30, 0.904);
+        background: #000000e5;
         transform: scale(1.01);
         transition: 0.5s;
     }
@@ -299,10 +299,10 @@
     
     .heading {
         font-size: 200%;
+        text-transform: uppercase;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-transform: uppercase;
     }
     
     .text_head::after,
@@ -427,11 +427,9 @@
     @keyframes upDown {
         50% {
             transform: translateY(-20%);
-            background: #fff;
         }
         100% {
             transform: translateY(0%);
-            background: transparent;
         }
     }
     
@@ -1075,6 +1073,9 @@
         .contactCard {
             width: 80%;
         }
+        #copyright {
+            font-size: 15px;
+        }
     }
     
     @media screen and (max-width:600px) {
@@ -1110,5 +1111,18 @@
         }
         .longText {
             flex-direction: column;
+        }
+    }
+    
+    #desktop {
+        display: none;
+    }
+    
+    @media screen and (min-width: 480px) {
+        #mobile {
+            display: none;
+        }
+        #desktop {
+            display: inline;
         }
     }
