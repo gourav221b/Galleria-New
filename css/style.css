@@ -481,6 +481,7 @@
         width: inherit;
         align-items: center;
         justify-content: center;
+        height: auto;
     }
     
     #row2 {
