@@ -12,16 +12,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
-    <title>Catalog|Galleria De Artiste </title>
+    <title>Literature Section|Galleria De Artiste </title>
     <style>
+        @media screen and (min-width: 300px) {
+            .card {
+                flex-direction: column;
+                height: auto;
+                padding: 1em;
+            }
+            .card>img {
+                width: 100%;
+                height: auto;
+            }
+            .btn_card {
+                width: 80%;
+            }
+        }
+        
         @media screen and (max-width:480px) {
             .card>img {
                 height: auto;
-                width: 60%;
+                width: 90%;
             }
             .card {
                 height: auto;
                 margin-bottom: 30px;
+            }
+            blockquote {
+                font-size: 15px;
+            }
+            #first {
+                font-size: 30px;
             }
         }
         
@@ -45,7 +66,7 @@
     <header>
         <div class="text">
             <div class="heading">
-                FEATURED ITEMS
+                LITERATURE SECTION
             </div>
             <div class="para">
                 For us, an Artist is not limited to someone who draws or paints, It's more than that. For us, every photographer, every writer, Every Musician is an artist.
@@ -59,40 +80,53 @@
     <section class="main">
         <section class="div_big div1">
             <div class="heading">
-                <p class="text_head">FEATURED ITEMS</p>
+                <p class="text_head">LITERATURE SECTION</p>
             </div>
         </section>
         <section class=" div_big divCard">
-            <!-- art -->
+            <!-- poem -->
             <div class="card">
-                <img class="lazy" data-src="/images/paint.jpg" alt="">
+                <img class="lazy" data-src="/images/poem.jpg" alt="">
                 <div class="cardContent">
-                    <p id="first">Art Gallery</p>
-                    <a role="link" href="/path/catalog/art.html" class="btn btn_card ">EXPLORE</a>
+                    <p id="first">Poems</p>
+                    <p>
+                        <blockquote>
+                            "Genuine poetry can communicate before it is understood." <br>
+                            <cite> T.S. Eliot</cite></blockquote>
+                    </p>
+                    <a role="link" href="/path/catalog/literature/poem.html" class="btn btn_card ">EXPLORE</a>
                 </div>
             </div>
-            <!-- photography -->
+            <!-- quote -->
             <div class="card">
-                <img class="lazy" data-src="/images/camera.jpg" alt="">
+                <img class="lazy" data-src="/images/quotes.jpg" alt="">
                 <div class="cardContent">
-                    <p id="first">Photo Gallery</p>
-                    <a role="link" class="btn  btn_card" href="/path/catalog/photography.html">EXPLORE</a>
+                    <p id="first">Quotes</p>
+                    <p>
+                        <blockquote>Sometimes, when long paragraphs don't provide the help, The short quotations, words of wisdom,speak louder.</blockquote>
+                    </p>
+                    <a role="link" class="btn  btn_card" href="/path/catalog/literature/quotes.html">EXPLORE</a>
                 </div>
             </div>
-            <!-- writing -->
+            <!-- article -->
             <div class="card">
-                <img class="lazy" data-src="https://cdn.pixabay.com/photo/2016/01/09/18/28/old-1130743_1280.jpg" alt="">
+                <img class="lazy" data-src="/images/articles.jpg" alt="">
                 <div class="cardContent">
-                    <p id="first">Literature Section</p>
-                    <a role="link" class="btn btn_card" href="/path/catalog/literature.html">EXPLORE</a>
+                    <p id="first">Articles</p>
+                    <p>
+                        <blockquote>Life is not just a bed of roses. The article section brings to light some of the talked, and some less talked issues. Find out more</blockquote>
+                    </p>
+                    <a role="link" class="btn btn_card" href="/path/catalog/literature/articles.html">EXPLORE</a>
                 </div>
             </div>
-            <!-- music -->
+            <!-- share -->
             <div class="card">
-                <img class="lazy" data-src="/images/music.jpg" alt="">
+                <img class="lazy" data-src="/images/submission.jpeg" alt="">
                 <div class="cardContent">
-                    <p id="first">Music Gallery</p>
-                    <a role="link" class="btn  btn_card" href="/path/catalog/music.html">EXPLORE</a>
+                    <p id="first">Share your Work</p>
+                    <blockquote>Want to See your Writing Published?
+                        <em> This</em> is the Place to GO!!</blockquote>
+                    <a role="link" class="btn  btn_card" href="/path/getfeatured.html">EXPLORE</a>
                 </div>
             </div>
         </section>
