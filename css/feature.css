@@ -106,6 +106,13 @@ textarea:focus {
     padding: 0 0 0.875em 0;
 }
 
+#name_input:focus,
+#email_input:focus,
+#telephone_input:focus {
+    background: transparent;
+    color: #ffffff;
+}
+
 .email {
     text-transform: lowercase;
 }

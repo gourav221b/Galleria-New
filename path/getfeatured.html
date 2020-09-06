@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,content=width=100% ">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta property="og:title" content="Galleria-De-Artiste">
     <meta name="google-site-verification" content="BSN7YHB9WxmjiaklAD_zTeqY-MScOzC0HUcrJbdRfEc" />
     <meta property="og:description" content="A platform for all types of Creativity">
@@ -15,6 +15,49 @@
     <link rel="stylesheet" href="/css/feature.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
     <title>Get Featured Today|Galleria De Artiste </title>
+    <style>
+        #mail>p {
+            margin-top: 20px;
+            font-size: 20px;
+            border: 2px solid;
+            color: #ffffff;
+            padding: 1em;
+        }
+        
+        .icon_wrapper>img {
+            animation: fly 4s linear;
+        }
+        
+        @keyframes fly {
+            0% {
+                transform: translate(-70%, 70%) scale(0.5);
+            }
+            100% {
+                transform: translate(0%, 0%) scale(1);
+            }
+            /* 100% {
+                transform: translate(70%, -70%) scale(0.5);
+            } */
+        }
+        
+        @media screen and(max-width:600px) {
+            .icon_wrapper>img {
+                animation: fly 6s linear;
+            }
+        }
+        
+        #mail>p>a {
+            margin: 0;
+            text-decoration: none;
+            color: #ec0f6b;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+        }
+        
+        #mail>p>a:hover {
+            color: #DAA520;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +68,7 @@
     <header>
         <div class="text">
             <div class="heading">
-                SEND US YOUR WORK
+                SHARE YOUR WORK WITH US
             </div>
             <div class="para">
                 Galleria-De-Artiste is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators over the unavailability of exclusive platforms for their work.
@@ -91,7 +134,9 @@
             </form>
 
         </section>
-
+        <section class="div_big" id="mail">
+            <p>DIFFICULTY WITH DRIVE LINKS? MAIL US AT &nbsp;<i class="fa fa-envelope-o" aria-hidden="true"></i> &nbsp;<a href="mailto:technical221b@gmail.com">technical221b@gmail.com</a></p>
+        </section>
     </section>
     <hr>
     <section class="footerContainer"></section>

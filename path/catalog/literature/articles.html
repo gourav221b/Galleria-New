@@ -61,6 +61,10 @@
             height: auto;
         }
         
+        li {
+            margin-top: 20px;
+        }
+        
         @media screen and (max-width: 600px) {
             .col {
                 flex-direction: column;
@@ -79,6 +83,9 @@
             .col1 {
                 width: 90%;
             }
+            .col1>p:nth-of-type(2n) {
+                margin-top: 0;
+            }
         }
     </style>
 
@@ -87,6 +94,7 @@
 <body>
     <div class="goto" onclick="location.replace('#top')">
         <i class="fa fa-angle-up"></i> </div>
+
     <nav id="navbar">
     </nav>
     <header>
@@ -117,10 +125,7 @@
 
     <script src="/js/main.js"></script>
     <script src="/js/article.js"></script>
-    <script>
-        const home = document.querySelector("#about");
-        home.classList.add('active');
-    </script>
+    <script src="/js/active.js"></script>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
 
 </body>

@@ -993,10 +993,17 @@
         .heading::after {
             display: none !important;
         }
+        .brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .brand>span>a {
+            position: absolute;
+            top: 30%;
             text-decoration: none;
             font-size: 120%;
-            margin-top: 50% !important;
+            height: auto;
         }
         .div_big {
             width: 80vw;
