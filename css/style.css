@@ -727,13 +727,18 @@
     .fa-instagram,
     .fa-reddit-alien,
     .fa-twitter,
-    .fa-github {
+    .fa-github,
+    .fa-youtube-play {
         transition: all 0.5s ease;
     }
     
     .social_icon a {
         text-decoration: none;
         color: #ffffff;
+    }
+    
+    .fa-youtube-play:hover {
+        color: rgb(238, 57, 57);
     }
     
     .fa-facebook:hover,
