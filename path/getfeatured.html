@@ -90,20 +90,20 @@
                 <img src="/images/mail.svg" alt="">
             </div>
             <form class="gform" action="https://script.google.com/macros/s/AKfycbzTY8QuGjCiZyHeMutbaCpuZ8tRplLxnjN97SDltM33l7fmeFLa/exec" method="POST">
-                <div class="name">
+                <div class="name" id="floating-label-wrap">
                     <label for="name"></label>
                     <input type="text" placeholder="My name is" name="name" id="name_input" required>
                 </div>
-                <div class="email">
+                <div class="email" id="floating-label-wrap">
                     <label for="email"></label>
                     <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
                 </div>
-                <div class="telephone">
-                    <label for="name"></label>
+                <div class="telephone" id="floating-label-wrap">
+                    <label for="telephone"></label>
                     <input type="text" placeholder="My number is (Optional)" name="telephone" id="telephone_input">
                 </div>
-                <div class="subject">
-                    <label for="subject"></label>
+                <div class="subject" id="floating-label-wrap">
+                    <label for="subject"> </label>
                     <select placeholder="Subject line" name="subject" id="subject_input" required>
                   <option disabled hidden selected>Chosen Field of Interest</option>
                   <option>I'd like to Submit a Story</option>
@@ -114,11 +114,11 @@
                   <option>I'd like to Submit an Music Piece</option>
                 </select>
                 </div>
-                <div class="message">
+                <div class="message" id="floating-label-wrap">
                     <label for="message"></label>
                     <textarea name="message" placeholder=" Optional Message" id="message_input" cols="30" rows="5"></textarea>
                 </div>
-                <div class="link">
+                <div class="link" id="floating-label-wrap">
                     <label for="name"></label>
                     <input type="link" placeholder="Here is a Google Drive Link of my Work" name="link" required>
                 </div>
