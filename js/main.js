@@ -91,5 +91,11 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener("orientationChange", lazyload);
     }
 });
+var sharebutton_script = document.createElement('script');
+
+sharebutton_script.setAttribute('src', 'https://static.addtoany.com/menu/page.js');
+sharebutton_script.async = true;
+
+document.head.appendChild(sharebutton_script);
 var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;

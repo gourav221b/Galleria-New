@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@700&family=Caveat&family=Sue+Ellen+Francisco&family=Architects+Daughter&display=swap" rel="stylesheet"');
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@700&family=Caveat&family=Sue+Ellen+Francisco&family=Architects+Daughter&family=Six+Caps&display=swap" rel="stylesheet"');
     * {
         margin: 0;
         padding: 0;
@@ -435,10 +435,11 @@
     
     #photo:hover {
         animation: circle 3s infinite;
+        border-radius: 50%;
     }
     
     @keyframes circle {
-        50% {
+        60% {
             transform: rotate(360deg) scale(1.1);
         }
         100% {
@@ -968,20 +969,6 @@
         footer {
             left: 0;
         }
-        .myCarousel {
-            width: 90vw;
-        }
-        .carousel-caption {
-            font-size: 14px;
-            position: absolute;
-            bottom: -20px;
-        }
-        .carousel-caption>h3 {
-            font-size: 18px;
-        }
-        .carousel-indicators {
-            bottom: -30px;
-        }
     }
     
     @media screen and (max-width:800px) {
@@ -1083,6 +1070,10 @@
         }
         #copyright {
             font-size: 15px;
+        }
+        .active {
+            border: none !important;
+            color: rgb(248, 184, 7) !important;
         }
     }
     
