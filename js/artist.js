@@ -24,6 +24,13 @@ var items = [{
         "Number": "6",
         "Type": "Sketches",
         "thumbnail": "/images/anupama/art/anu6.jpeg"
+    },
+    {
+
+        "Name": "aritra",
+        "Number": "2",
+        "Type": "paintings",
+        "thumbnail": "/images/aritra/art/aritra2.jpg"
     }, {
 
         "Name": "arkadeep",
