@@ -885,6 +885,11 @@
         font-size: 30px;
     }
     
+    .middle_ul>li {
+        margin: 2px;
+        padding: 2px;
+    }
+    
     @media screen and (max-width: 1100px) {
         #navbar {
             background: #000000;
@@ -1095,6 +1100,14 @@
         .active {
             border: none !important;
             color: rgb(248, 184, 7) !important;
+        }
+        .social>a {
+            padding: 0;
+            margin: 1px;
+        }
+        .social>a>i {
+            font-size: 150%;
+            margin: 1px;
         }
     }
     

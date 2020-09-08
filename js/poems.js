@@ -88,3 +88,47 @@ function myFunction(arr) {
     }
     document.getElementById("poemDiv").innerHTML = out;
 }
+
+
+
+var poemrandom = [{
+        "name": " And it was at that age . . . poetry arrived <br> in search of me. I don't know, I don't know where<br> it came from, from winter or a river.<br> I don't know how or when,<br> no, they were not voices, they were not<br> words, not silence,<br>but from a street it called me,<br> from the branches of night,<br> abruptly from the others,<br> among raging fires<br> or returning alone,<br> there it was, without a face,<br> and it touched me........<br><br>",
+        "cite": "Poetry, Pablo Neruda",
+    }, {
+        "name": "I want you to know<br>one thing.<br> You know how this is:<br>if I look<br>at the crystal moon, at the red branch<br>of the slow autumn at my window,<br> if I touch<br> near the fire<br>the impalpable ash<br>or the wrinkled body of the log,<br>everything carries me to you,<br>as if everything that exists,<br>aromas, light, metals,<br> were little boats<br>that sail<br> toward those isles of yours that wait for me.",
+        "cite": "If you forget me, Pablo Neruda",
+    },
+    {
+        "name": "If you can keep your head when all about you<br>Are losing theirs and blaming it on you,<br>If you can trust yourself when all men doubt you,<br>But make allowance for their doubting too;<br>If you can wait and not be tired by waiting,<br>Or being lied about, don’t deal in lies,<br>Or being hated, don’t give way to hating,<br>And yet don’t look too good, nor talk too wise:",
+        "cite": "If, Rudyard Kipling",
+    }, {
+        "name": "......<br>O sages standing in God’s holy fire<br>As in the gold mosaic of a wall,<br>Come from the holy fire, perne in a gyre,<br>And be the singing-masters of my soul.<br>Consume my heart away; sick with desire<br>And fastened to a dying animal<br>It knows not what it is; and gather me<br> Into the artifice of eternity.",
+        "cite": "Sailing to Byzantium, W. B. Yeats",
+    }, {
+        "name": "If I should die, think only this of me:<br>That there’s some corner of a foreign field<br>That is for ever England. There shall be<br>In that rich earth a richer dust concealed;<br>A dust whom England bore, shaped, made aware,<br>Gave, once, her flowers to love, her ways to roam;<br> A body of England’s, breathing English air,<br> Washed by the rivers, blest by suns of home",
+        "cite": "The Soldier, Rupert Brooke"
+    }, {
+        "name": "“Forward, the Light Brigade!”<br>Was there a man dismayed?<br>Not though the soldier knew<br>Someone had blundered.<br>Theirs not to make reply,<br>Theirs not to reason why,<br></br>Theirs but to do and die.<br>Into the valley of Death<br> Rode the six hundred.",
+        "cite": "The Charge of the Light Brigade, Alfred Lord Tennyson",
+    }, {
+        "name": "You should not ask, it is unholy to know, for me or for you<br> what end the gods will have given, O Leuconoe, nor Babylonian<br>calculations attempt. Much better it is whatever will be to endure,<br> whether more winters Jupiter has allotted or the last,<br></br> which now weakens against opposing rocks the sea<br> Tyrrhenian: be wise, strain your wines, and because of brief life<br>cut short long-term hopes. While we are speaking, envious will have fled<br> a lifetime: seize the day, as little as possible trusting the future.",
+        "cite": "Ode 1.11 , Horace",
+    }, {
+        "name": "“Forward, the Light Brigade!”<br>Was there a man dismayed?<br>Not though the soldier knew<br>Someone had blundered.<br>Theirs not to make reply,<br>Theirs not to reason why,<br></br>Theirs but to do and die.<br>Into the valley of Death<br> Rode the six hundred.",
+        "cite": "The Charge of the Light Brigade, Alfred Lord Tennyson",
+    }
+
+]
+
+randompoems(poemrandom);
+
+function randompoems(arr) {
+    var out = "";
+
+    var max = poemrandom.length - 1;
+    var i = Math.floor(Math.random() * (max + 1)) + 1;
+
+    out += arr[i].name + '"<br> <cite style="font-weight: 800;font-family: monospace; text-transform: uppercase;"> -' + arr[i].cite + '</cite>';
+
+    document.getElementById("headPoem").innerHTML = out;
+}
