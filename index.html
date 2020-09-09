@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="/images/faviconbg.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/izmir.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
     <title>Galleria De Artiste - A multi talent platform where we encourage and present Art, Music, Photogrpahy and Literature</title>
     <style>
@@ -27,6 +28,21 @@
             width: 30vw;
         }
         
+        .c4-izmir {
+            --border-width: 5px;
+            --transition-duration: 500ms;
+            --overlay-opacity: .5;
+        }
+        
+        .div3 {
+            margin: 20px auto;
+        }
+        
+        .headc4 {
+            text-transform: uppercase;
+            margin-bottom: 10px !important;
+        }
+        
         @media screen and (max-width: 800px) {
             .headButton {
                 display: flex;
@@ -37,6 +53,22 @@
             .headButton>a {
                 margin: 10px;
                 width: 60vw;
+            }
+        }
+        
+        .image_divs {
+            margin-bottom: 20px;
+        }
+        
+        @media screen and (min-width: 800px) {
+            .image_divs {
+                margin: 20px;
+                height: auto;
+                width: 30%;
+            }
+            .image_divs>img {
+                width: 100%;
+                height: auto;
             }
         }
         
@@ -90,28 +122,71 @@
             </div>
         </section>
         <section class="div_big div3">
-            <div class="image_divs" id="image_divs1" style="background: #151515;">
-                <img src="/images/paint.svg" class="headline" id="paint" />
-                <img src="https://images.pexels.com/photos/2258795/pexels-photo-2258795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="painting" class="vertical img-fluid" id="art">
-                <p class="hoveringText">Art Section</p>
-            </div>
-            <div class="image_divs" id="image_divs2">
-                <img src="/images/photography.svg" class="headline" id="photo" />
-                <img src="https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="camera" class="vertical img-fluid" id="photography">
-                <p class="hoveringText">Photography Section</p>
-            </div>
-            <div class="image_divs" id="div1">
-                <img src="/images/headphones.svg" class="headline" id="headphone" />
-                <img src="https://images.pexels.com/photos/1644616/pexels-photo-1644616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="music" class="vertical img-fluid" id="music">
-                <p class="hoveringText">Music Gallery</p>
-            </div>
-            <div class="image_divs" id="image_divs2">
-                <img src="/images/typewriter.svg" class="headline" id="typewriter" />
+            <figure class="c4-izmir image_divs c4-border-center " style="--primary-color: #000046; --secondary-color: #1CB5E0; --border-width: 5px;">
+                <img src="https://images.pexels.com/photos/2258795/pexels-photo-2258795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sample Image">
+                <figcaption>
+                    <div class="headc4 c4-rotate-up-left">
+                        <h3>
+                            ART GALLERY
+                        </h3>
+                    </div>
+                    <div class="c4-rotate-down-left">
+                        <p>
+                            Sketches, Paintings, Color, Digital Art
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="c4-izmir image_divs c4-border-ccc-2" style="--primary-color: #0f0c29; --secondary-color: #302b63;">
+                <img src="https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sample Image">
+                <figcaption>
+                    <div class="headc4 c4-reveal-up">
+                        <h3>
+                            PHOTOGRAPHY GALLERY
+                        </h3>
+                    </div>
+                    <div class="c4-reveal-up">
+                        <p>
+                            Capturing the beauty of a moment in every click
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="c4-izmir image_divs c4-border-cc-3" style="--primary-color: #240b36; --secondary-color: #240b36;">
+                <img src="https://images.pexels.com/photos/1644616/pexels-photo-1644616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sample Image">
+                <figcaption>
+                    <div class="headc4 c4-reveal-up">
+                        <h3>
+                            music gallery
+                        </h3>
+                    </div>
+                    <div class="c4-reveal-up">
+                        <p>
 
-                <img src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="writing" class="vertical img-fluid" id="wrting">
-                <p class="hoveringText">Literature Section</p>
-            </div>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="c4-izmir image_divs c4-border-bottom-left" style="--primary-color: #6441A5; --secondary-color: #2a0845;">
+                <img src="https://images.pexels.com/photos/1394646/pexels-photo-1394646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sample Image">
+                <figcaption>
+                    <div class="headc4 c4-reveal-up">
+                        <h3>
+                            Literature section
+                        </h3>
+                    </div>
+                    <div class="c4-reveal-up">
+                        <p>
+                            "That is part of the beauty of all literature. You discover that your longings are universal longings, that you’re not lonely and isolated from anyone. You belong."
+                            <br>
+                            <cite>F. Scott Fitzgerald</cite>
+                        </p>
+                    </div>
+                </figcaption>
+            </figure>
+
         </section>
+
         <section class="div_big div4">
             <!-- ART -->
             <div class="row">

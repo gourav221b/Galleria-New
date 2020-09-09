@@ -1,6 +1,9 @@
 const navbar = document.querySelector('.navbar');
 const active = document.querySelector('.active');
 const navContainer = document.querySelector('#navbar');
+const imzir = document.createElement('link');
+imzir.rel = StyleSheet;
+imzir.setAttribute('src', '/css/izmir.min.css');
 navContainer.innerHTML = ' <div class="hamburger-menu" id="ham"><span class="bars"></span></div><div class="brand" ><span><a href="/index.html">Galleria De Artiste</a></span></div><div class="menu"><ul class="menu_items"><li><a class="nav_li" href="/index.html" id="home">HOME</a></li><li><a class="nav_li" href="/path/catalogue.html" id="Catalogue">CATALOGUE</a></li><li><a class="nav_li" href="/path/about.html" id="about">ABOUT</a></li><li><a class="nav_li " href="/path/contact.html" id="contact">CONTACT</a></li><li><a class="nav_li " href="/path/getfeatured.html" id="featured">GET FEATURED</a></li><li class="social"><a href="https://www.facebook.com/GalleriadeArtiste"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.instagram.com/galleria_de_artiste/"><i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://www.reddit.com/r/Galleria_de_artiste/"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a><a target="_blank" href="https://twitter.com/GdeArtiste"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a target="_blank" href="mailto:technical221b@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a><span id="copyright">&copy; GALLERIA-DE-ARTISTE 2020</span></li></ul></div>';
 
 
