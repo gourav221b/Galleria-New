@@ -8,7 +8,7 @@ navContainer.innerHTML = ' <div class="hamburger-menu" id="ham"><span class="bar
 
 
 const footer = document.querySelector('.footerContainer');
-footer.innerHTML = ' <div id="shareit"></div> <hr><footer><section class="left_footer"><p id="first">GALLERIA-DE-ARTISTE</p><p>Galleria de artiste is an open platform, multi talent platform featuring Art, Photography, Creative Writings and Music. It is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators        over the unavailability of exclusive platforms for their work.</p></section><section class="middle_footer"><p id="first">Quick Links</p><p><ul class="middle_ul"><li><a href="index.html" class="yellow">Home</a></li>            <li><a class="yellow" href="/path/catalogue.html">Catalogue</a><ol class="middle_ul"><li><a class="red" href="/path/catalog/art.html">Art</a></li><li><a class="red" href="/path/catalog/photography.html">Photography</a></li><li><a class="red" href="/path/catalog/literature.html">Literature</a></li><li><a class="red"href="/path/catalog/music.html">Music</a></li></ol></li><li><a href="/path/about.html" class="yellow">About</a></li><li><a href="/path/contact.html" class="yellow">Contact</a></li><li><a href="/path/getfeatured.html" class="yellow"> Get Featured</a></li></ul></p></section><section class="right_footer"><p id="first">Follow Us on</p><p class="social_media"><div class="social_icon facebook"><a target="_blank" href="https://www.facebook.com/GalleriadeArtiste"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>  <div class="social_icon instagram"><a target="_blank" href="https://www.instagram.com/galleria_de_artiste/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div><div class="social_icon reddit"><a target="_blank" href="https://www.reddit.com/r/Galleria_de_artiste/"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></div><div class="social_icon twitter"><a target="_blank" href="https://twitter.com/GdeArtiste"><i class="fa fa-twitter" aria-hidden="true"></i></a>  <a target="_blank" href="mailto:technical221b@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></div></p><p id="copyright">© Galleria-De-Artiste 2020</p></section></footer>';
+footer.innerHTML = ' <div id="shareit"></div> <hr><footer><section class="left_footer"><p id="first">GALLERIA-DE-ARTISTE</p><p>Galleria de artiste is an open platform, multi talent platform featuring Art, Photography, Creative Writings and Music. It is more than just a website featuring art. It is a community, a child born out of the grievances of many new creators        over the unavailability of exclusive platforms for their work.</p></section><section class="middle_footer"><p id="first">Quick Links</p><p><ul class="middle_ul"><li><a href="index.html" class="yellow">Home</a></li>            <li><a class="yellow" href="/path/catalogue.html">Catalogue</a><ol class="middle_ul"><li><a class="red" href="/path/catalog/art.html">Art</a></li><li><a class="red" href="/path/catalog/photography.html">Photography</a></li><li><a class="red" href="/path/catalog/literature.html">Literature</a></li><li><a class="red"href="/path/catalog/music.html">Music</a></li></ol></li><li><a href="/path/about.html" class="yellow">About</a></li><li><a href="/path/contact.html" class="yellow">Contact</a></li><li><a href="/path/getfeatured.html" class="yellow"> Get Featured</a></li></ul></p></section><section class="right_footer"><p id="first">Follow Us on</p><p class="social_media"><div class="social_icon facebook"><a target="_blank" href="https://www.facebook.com/GalleriadeArtiste"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>  <div class="social_icon instagram"><a target="_blank" href="https://www.instagram.com/galleria_de_artiste/"><i class="fa fa-instagram" aria-hidden="true"></i></a></div><div class="social_icon reddit"><a target="_blank" href="https://www.reddit.com/r/Galleria_de_artiste/"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></div><div class="social_icon twitter"><a target="_blank" href="https://twitter.com/GdeArtiste"><i class="fa fa-twitter" aria-hidden="true"></i></a></div></p><p id="copyright">© Galleria-De-Artiste 2020</p></section></footer>';
 
 const share = document.querySelector('#shareit');
 share.innerHTML = '<h2 class="shareText">Recommend us to your friends and family 😀</h2><div class="a2a_kit a2a_kit_size_32 a2a_default_style sharediv" data-a2a-url="https://www.gallerianew.netlify.app" data-a2a-title="Galleria De Artiste"><a class="a2a_dd" href="https://www.addtoany.com/share"></a><a class="a2a_button_copy_link"></a><a class="a2a_button_facebook"></a><a class="a2a_button_twitter"></a><a class="a2a_button_reddit"></a><a class="a2a_button_linkedin"></a><a class="a2a_button_whatsapp"></a><a class="a2a_button_telegram"></a></div>';
@@ -28,6 +28,7 @@ function scrollFunction() {
         // active.style.color = "#ffffff";
         // active.style.border = "2px solid #ffffff";
         goto.style.display = "none";
+
     }
 }
 const menuBtn = document.querySelector('.hamburger-menu');
@@ -102,3 +103,34 @@ sharebutton_script.async = true;
 document.head.appendChild(sharebutton_script);
 var a2a_config = a2a_config || {};
 a2a_config.onclick = 1;
+
+var images = [{
+        url: "banner6.jpg"
+
+    },
+    {
+        url: "banner2.jpg"
+
+    },
+    {
+        url: "banner3.jpg"
+
+    },
+    {
+        url: "banner4.jpg"
+
+    },
+    // {
+    //     url: "banner5.jpg"
+
+    // },
+    {
+        url: "banner7.jpg"
+
+    }
+];
+
+const len = images.length - 1;
+const homesec = document.querySelector("#header");
+var i = Math.floor(Math.random() * (len + 1)) + 1;
+homesec.style.background = "url('/images/" + images[i].url + "'), #151515 ";

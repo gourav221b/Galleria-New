@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@700&family=Caveat&family=Sue+Ellen+Francisco&family=Architects+Daughter&family=Six+Caps&display=swap" rel="stylesheet"');
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat&family=Raleway:wght@500&family=Roboto+Condensed&family=Roboto+Mono:wght@700&family=Caveat&family=Sue+Ellen+Francisco&family=Architects+Daughter&family=Six+Caps&family=Rosario&display=swap" rel="stylesheet"');
     * {
         margin: 0;
         padding: 0;
@@ -263,11 +263,12 @@
     
     header {
         background: #151515;
-        background: url('/images/banner.jpg') #151515;
+        background: url('/images/banner4.jpg') #151515;
         background-blend-mode: lighten;
-        background-size: cover;
-        background-repeat: no-repeat;
-        justify-content: center;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        justify-content: center !important;
         width: 100%;
         height: 90vh;
         background-attachment: fixed;
@@ -290,7 +291,8 @@
         flex-direction: column;
         position: absolute;
         left: 0;
-        font-size: 120%;
+        font-size: 110%;
+        padding: 1em;
     }
     
     .text {
@@ -317,9 +319,10 @@
     }
     
     .para {
-        font-family: 'Lora', cursive;
+        font-family: 'Rosario', cursive;
         text-transform: capitalize;
         text-align: justify;
+        font-size: 110%;
     }
     
     .btn {
@@ -339,6 +342,7 @@
     }
     
     .image {
+        display: none;
         width: 30%;
         height: inherit;
         position: absolute;
@@ -998,6 +1002,9 @@
     }
     
     @media screen and (max-width:800px) {
+         ::-webkit-scrollbar {
+            display: none;
+        }
         .heading {
             font-size: 120%;
             width: auto;
@@ -1073,6 +1080,9 @@
     }
     
     @media screen and (max-width:480px) {
+        header {
+            height: 100vh;
+        }
         .text {
             width: 100%;
         }
