@@ -47,7 +47,7 @@ var items = [{
     {
 
         "Name": "gourav",
-        "Number": "24",
+        "Number": "35",
         "Type": "Sketches",
         "thumbnail": "/images/gourav/art/kakashi.jpeg"
     },
@@ -71,6 +71,12 @@ var items = [{
         "Number": "6",
         "Type": "Drawings",
         "thumbnail": "/images/parthib/art/parthib6.jpeg"
+    },{
+
+        "Name": "preeti",
+        "Number": "9",
+        "Type": "Drawings",
+        "thumbnail": "/images/preeti/preeti1.jpg"
     },
     {
 
@@ -118,6 +124,11 @@ var items = [{
         "Number": "4",
         "Type": "Digital Art",
         "thumbnail": "/images/swastik/art/BlackAdam1.jpg"
+    }, {
+        "Name": "trisha",
+        "Number": "24",
+        "Type": "Paintings",
+        "thumbnail": "/images/trisha/art/12.jpeg"
     }
 
 
