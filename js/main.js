@@ -133,4 +133,4 @@ var images = [{
 const len = images.length - 1;
 const homesec = document.querySelector("#header");
 var i = Math.floor(Math.random() * (len + 1)) + 1;
-homesec.style.background = "url('/images/" + images[i].url + "'), #151515 ";
+homesec.style.background = "url('/images/" + images[5].url + "'), #151515 ";
