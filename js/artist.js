@@ -73,7 +73,7 @@ var items = [{
         "thumbnail": "/images/parthib/art/parthib6.jpeg"
     },{
 
-        "Name": "preeti",
+        "Name": "preetilata",
         "Number": "9",
         "Type": "Drawings",
         "thumbnail": "/images/preeti/preeti1.jpg"
